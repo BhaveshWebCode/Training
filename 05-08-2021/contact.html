@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>Bhavesh Parmar</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color:aqua;
+            overflow: hidden; 
+        }
+        li{
+            float: left; /*display left side*/
+            /* width: 200px; */
+        }
+        li a{
+            display: block;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+            /* background-color: aqua; */
+            color: chocolate;
+            font-size: 25px;
+            text-decoration: none; /*remove underline*/        
+        }
+        a:hover {
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+           
+            width: 100%;
+            font-size: 25px;
+        }
+        td{
+            /* border: 1px solid black; */
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        .contactform{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bhavesh Parmar</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <center>
+        <h1>Contact Details</h1><hr><br>
+        <table>
+            <tr>
+                <th>email</th>
+                <td>bhavesh.p@webcodegenie.com</td>
+                <td rowspan="2">
+                    <form action="#">
+                        <table class="contactform" style="border: 1px solid black; width: 400px;">
+                            <tr>
+                                <th colspan="2" style="text-align: center; padding: 5px;">Provide Your Details</th>
+                            </tr>
+                            <tr>
+                                <td>Your Name</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>email</td>
+                                <td><input type="text" placeholder="example@abc.com"></td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>
+                                    <select name="city" id="city">
+                                        <option value="Ahmedabad">Ahmedabad</option>
+                                        <option value="Baroda">Baroda</option>
+                                        <option value="Surat">Surat</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="SUBMIT"></td>
+                            </tr>
+                        </table>
+                    </form> 
+                </td>
+            </tr>
+            <tr>
+                <th>phone</th>
+                <td>6354421667</td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
