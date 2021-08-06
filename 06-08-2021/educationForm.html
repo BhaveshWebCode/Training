@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Registration form</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+<body>
+    <center>
+        <h1>Job Registration Form</h1><hr>
+        <div>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <table>
+                    <thead>
+                        <th colspan="2">Education Details</th>
+                    </thead>
+                    <tr>
+                        <td>10<sup><small>th</small></sup> Percentage</td>
+                        <td><input type="text" name="tenper" placeholder="ex.58" min="33" max="99"></td>
+                    </tr>
+                    <tr>
+                        <td>12<sup><small>th</small></sup> Percentage</td>
+                        <td><input type="text" name="twelper" placeholder="ex.60" min="33" max="99"></td>
+                    </tr>
+                    <tr>
+                        <td>Degree</td>
+                        <td>
+                            <select class="fontSize" name="degree" id="degree">
+                                <option value="basc" selected disabled>Choose Degree</option>
+                                <option value="basc">BSc</option>
+                                <option value="bca">BCA</option>
+                                <option value="btech">B.Tech</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bacholor's GPA</td>
+                        <td><input type="number" name="gpa" min="1" max="10" placeholder="ex. 4"></td>
+                    </tr>
+                    <tr>
+                        <td>Any Acadmic Gape</td>
+                        <td>
+                            <input type="radio" name="gape" id="gapeYes">Yes
+                            <input type="radio" name="gape" id="gapeNo" checked>No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>If yes please provide details</td>
+                        <td><textarea name="gapeDetails" id="gapeDetails" placeholder="provide reason..." cols="30" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Graduation Year</td>
+                        <td>
+                            <select class="fontSize" name="graduationYear"  class="" id="graduationYear">
+                                <option value=" ">Select Year</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Any Active Backlog</td>
+                        <td>
+                            <input type="radio" name="backlog" id="backlogYes">Yes
+                            <input type="radio" name="backlog" id="backlogNo" checked>No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;"><input type="button"  class="next"  onclick="window.location.href='contactForm.html';" name="back" value="Back"></td>
+                        <td colspan="2" style="text-align: right;"><input type="button"  class="next"  onclick="window.location.href='technicalSkillsForm.html';" name="next" value="Next"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

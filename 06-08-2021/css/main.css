@@ -1,0 +1,46 @@
+table{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    margin-top: 25px;
+    width: 80%;
+}
+td{
+    /* border: 1px solid black; */
+    width: 30%;
+    padding: 20px;
+    font-size: 20px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+input{
+    font-size: 15px;
+}
+div{
+    height: 100%;
+    width: 70%;
+    background-color: cadetblue;
+}
+.sbutton{
+    text-align: center;
+}
+th{
+    font-size: 23px;
+    padding:5px;
+    border-bottom: 1px solid black;
+}
+.fontSize{
+    font-size:16px;
+}
+.next{
+    cursor: pointer;
+    padding: 12px;
+    border: 1px solid beige;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+}
+.next:hover{
+    background-color: red;
+}
+body{
+    background-color: burlywood;
+}

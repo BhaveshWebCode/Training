@@ -2,44 +2,8 @@
 <html>
     <head>
         <title>Job Registration form</title>
+        <link rel="stylesheet" href="./css/main.css">
     </head>
-    <style>
-        table{
-            /* border: 1px solid black; */
-            border-collapse: collapse;
-            margin-top: 25px;
-            width: 80%;
-        }
-        td{
-            /* border: 1px solid black; */
-            width: 30%;
-            padding: 20px;
-            font-size: 20px;
-            /* font-family: Georgia, 'Times New Roman', Times, serif; */
-        }
-        input{
-            font-size: 15px;
-        }
-        div{
-            height: 100%;
-            width: 60%;
-        }
-        .sbutton{
-            text-align: center;
-        }
-        th{
-            font-size: 23px;
-            padding:5px;
-            border-bottom: 1px solid black;
-        }
-        .fontSize{
-            font-size:16px;
-        }
-        .next{
-            cursor: pointer;
-            padding: 10px;
-        }
-    </style>
 <body>
     <center>
         <h1>Job Registration Form</h1><hr>
@@ -59,7 +23,7 @@
                     </tr>
                     <tr>
                         <td>Address</td>
-                        <td><textarea name="address" id="address" cols="30" rows="4"></textarea></td>
+                        <td><textarea name="address" id="address" cols="30" rows="4" placeholder="please, provide your full address"></textarea></td>
                     </tr>
                     <tr>
                         <td>City</td>
@@ -85,10 +49,11 @@
                     </tr>
                     <tr>
                         <td>Linkdin URL</td>
-                        <td><input type="url"></td>
+                        <td><input type="url" placeholder="http://www.linkedin.com/abc/"></td>
                     </tr>
                     <tr>
-                        <td colspan="2" style="text-align: right;"><input type="button"  class="next"  onclick="window.location.href='contactForm.html';" name="next" value="Next"></td>
+                        <td style="text-align: left;"><input type="button"  class="next"  onclick="window.location.href='registrationForm.html';" name="back" value="Back"></td>
+                        <td style="text-align: right;"><input type="button"  class="next"  onclick="window.location.href='educationForm.html';" name="next" value="Next"></td>
                     </tr>
                 </table>
             </form>
