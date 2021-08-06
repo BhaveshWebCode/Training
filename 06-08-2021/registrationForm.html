@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Registration form</title>
+    </head>
+    <style>
+        table{
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+            margin-top: 25px;
+            width: 80%;
+        }
+        td{
+            /* border: 1px solid black; */
+            width: 30%;
+            padding: 20px;
+            font-size: 20px;
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        }
+        input{
+            font-size: 15px;
+        }
+        div{
+            height: 100%;
+            width: 60%;
+        }
+        .sbutton{
+            text-align: center;
+        }
+        th{
+            font-size: 23px;
+            padding:5px;
+            border-bottom: 1px solid black;
+        }
+        .fontSize{
+            font-size:16px;
+        }
+        .next{
+            cursor: pointer;
+            padding: 10px;
+        }
+    </style>
+<body>
+    <center>
+        <h1>Job Registration Form</h1><hr>
+        <div>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <table>
+                    <thead>
+                        <th colspan="2">Personal Details</th>
+                    </thead>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" autofocus="on" placeholder="Enter First Name" name="fname" id="fname" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" id="lname" placeholder="Enter Last Name"></td>
+                    </tr>
+                    <tr>
+                            <td>Gender</td>
+                            <td><input type="radio" id="genM" name="gender" value="m">Male</input>
+                            <input type="radio" id="genF" name="gender" value="f">Female</input>
+                    </tr>
+                    <!-- in date min and max value used becoz we need only 18 to 40 year age group -->
+                    <tr>
+                        <td>Date of Birthe</td>
+                        <td><input type="date" name="date" id="date" min="1980-08-06" max="2003-08-06"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;"><input type="button"  class="next"  onclick="window.location.href='contactForm.html';" name="next" value="Next"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

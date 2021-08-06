@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Registration form</title>
+    </head>
+    <style>
+        table{
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+            margin-top: 25px;
+            width: 80%;
+        }
+        td{
+            /* border: 1px solid black; */
+            width: 30%;
+            padding: 20px;
+            font-size: 20px;
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        }
+        input{
+            font-size: 15px;
+        }
+        div{
+            height: 100%;
+            width: 60%;
+        }
+        .sbutton{
+            text-align: center;
+        }
+        th{
+            font-size: 23px;
+            padding:5px;
+            border-bottom: 1px solid black;
+        }
+        .fontSize{
+            font-size:16px;
+        }
+        .next{
+            cursor: pointer;
+            padding: 10px;
+        }
+    </style>
+<body>
+    <center>
+        <h1>Job Registration Form</h1><hr>
+        <div>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <table>
+                    <thead>
+                        <th colspan="2">Contact Details</th>
+                    </thead>
+                    <tr>
+                        <td>Mobile No</td>
+                        <td><input type="text" id="Mon" placeholder="Enter Mobile Number"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Email-Id</td>
+                        <td><input type="email" id="email" placeholder="abc@example.com"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea name="address" id="address" cols="30" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>
+                            <select id="city" class="fontSize">
+                                <option disabled selected>Select City</option>
+                                <option>Ahamedabad</option>
+                                <option>Surat</option>
+                                <option>Baroda</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td>
+                            <select id="state" class="fontSize">
+                                <option disabled selected>Select State</option>
+                                <option>Ahamedabad</option>
+                                <option>Surat</option>
+                                <option>Baroda</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Linkdin URL</td>
+                        <td><input type="url"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;"><input type="button"  class="next"  onclick="window.location.href='contactForm.html';" name="next" value="Next"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
