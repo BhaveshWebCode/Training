@@ -17,7 +17,7 @@ input{
 div{
     height: 100%;
     width: 70%;
-    background-color: cadetblue;
+    background-color: #79BEA8;
 }
 .sbutton{
     text-align: center;
@@ -25,6 +25,7 @@ div{
 th{
     font-size: 23px;
     padding:5px;
+    padding-top: 20px;
     border-bottom: 1px solid black;
 }
 .fontSize{
@@ -42,5 +43,8 @@ th{
     background-color: red;
 }
 body{
-    background-color: burlywood;
+    background-color: #448D76;
+}
+h1{
+    color:white;
 }
