@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Registration form(simple)</title>
+    </head>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        td{
+            border: 1px solid black;
+            width: 30%;
+            padding: 20px;
+            font-size: 20px;
+        }
+        input{
+            font-size: 15px;
+        }
+        div{
+            height: 100%;
+            width: 60%;
+        }
+        .sbutton{
+            text-align: center;
+        }
+        th{
+            font-size: 20px;
+            padding:5px;
+        }
+        .fontSize{
+            font-size:16px;
+        }
+    </style>
+<body>
+    <center>
+        <h1>Job Registration Form</h1><hr>
+        <div>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <table>
+                    <thead>
+                        <th colspan="2">Personal Details</th>
+                    </thead>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" autofocus="on" placeholder="Enter First Name" name="fname" id="fname"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" id="lname" placeholder="Enter Last Name"></td>
+                    </tr>
+                    <tr>
+                            <td>Gender</td>
+                            <td><input type="radio" id="genM" name="gender" value="m">Male</input>
+                            <input type="radio" id="genF" name="gender" value="f">Female</input>
+                    </tr>
+                    <!-- in date min and max value used becoz we need only 18 to 40 year age group -->
+                    <tr>
+                        <td>Date of Birthe</td>
+                        <td><input type="date" name="date" id="date" min="1980-08-06" max="2003-08-06"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Contact Details</th>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea name="address" id="address" cols="30" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>
+                            <select id="city" class="fontSize">
+                                <option disabled selected>Select City</option>
+                                <option>Ahamedabad</option>
+                                <option>Surat</option>
+                                <option>Baroda</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td>
+                            <select id="state" class="fontSize">
+                                <option disabled selected>Select State</option>
+                                <option>Ahamedabad</option>
+                                <option>Surat</option>
+                                <option>Baroda</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No</td>
+                        <td><input type="text" id="Mon" placeholder="Enter Mobile Number"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Email-Id</td>
+                        <td><input type="email" id="email" placeholder="abc@example.com"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Linkdin URL</td>
+                        <td><input type="url"></td>
+                    </tr>
+                    <tr>
+                        <td>Upload cv</td>
+                        <td><input type="file" id="file" /></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Educational Details</th>
+                    </tr>
+                    <tr>
+                        <td>10<sup><small>th</small></sup> Percentage</td>
+                        <td><input type="text" name="tenper"></td>
+                    </tr>
+                    <tr>
+                        <td>12<sup><small>th</small></sup> Percentage</td>
+                        <td><input type="text" name="twelper"></td>
+                    </tr>
+                    <tr>
+                        <td>Degree</td>
+                        <td>
+                            <select class="fontSize" name="degree" id="degree">
+                                <option value="basc" selected disabled>Choose Degree</option>
+                                <option value="basc">BSc</option>
+                                <option value="bca">BCA</option>
+                                <option value="btech">B.Tech</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bacholor's GPA</td>
+                        <td><input type="number" name="gpa" min="1" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Any Acadmic Gape</td>
+                        <td>
+                            <input type="radio" name="gape" id="gapeYes">Yes
+                            <input type="radio" name="gape" id="gapeNo">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>If yes please provide details</td>
+                        <td><textarea name="gapeDetails" id="gapeDetails" cols="30" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Graduation Year</td>
+                        <td>
+                            <select class="fontSize" name="graduationYear"  class="" id="graduationYear">
+                                <option value=" ">Select Year</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Any Active Backlog</td>
+                        <td>
+                            <input type="radio" name="backlog" id="backlogYes">Yes
+                            <input type="radio" name="backlog" id="backlogNo">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Technical Skills</th>
+                    </tr>
+                    <tr>
+                        <td>Programming languages you know</td>
+                        <td>
+                            <input type="checkbox" name="c" value="C">C
+                            <input type="checkbox" name="cplus" value="C">C++
+                            <input type="checkbox" name="java" value="C">JAVA
+                            <input type="checkbox" name="net" value="C">.Net
+                            <input type="checkbox" name="JavaScript" value="C">JavaScript
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Database</td>
+                        <td>
+                            <input type="checkbox" name="mongodb">MongoDB
+                            <input type="checkbox" name="mysql">MySql
+                            <input type="checkbox" name="postgresql">PostgreSQL
+                        </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Project Details</th>
+                    </tr>
+                    <tr>
+                        <td>Project Name</td>
+                        <td><input type="text" name="pname"></td>
+                    </tr>
+                    <tr>
+                        <td>Which langaue you used for that</td>
+                        <td><input type="text" naem="planguage"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="sbutton"><input type="submit" value="submit">
+                        <input type="reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
