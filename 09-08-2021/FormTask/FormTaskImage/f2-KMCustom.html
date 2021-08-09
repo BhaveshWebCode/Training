@@ -1,0 +1,161 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KM Custom HTML</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+        caption{
+            font-size: 25px;
+        }
+        table{
+            width: 50%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid black;
+            text-align: left;
+            padding: 6px;
+            font-size: 20px;
+            width: 30%;
+        }
+        input{
+            font-size: 16px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 6px;
+            font-size: 16px;
+            text-align: left;
+        }
+        caption{
+            margin: 10px;
+        }
+        .submit{
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border: 2px solid white;
+            border-radius: 30px;
+            padding-left: 11px;
+            padding-right: 11px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            cursor: pointer;
+        }
+        .cancel{
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            border: 2px solid blue  ;
+            border-radius: 30px;
+            padding-left: 11px;
+            padding-right: 11px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            cursor: pointer;
+        }
+        .resize{
+            font-size: 20px;
+            border-radius: 30px;
+            padding-left: 11px;
+            padding-right: 11px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            cursor: pointer;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="#">
+            <table>
+                <caption>
+                    <b>KM Custom HTML Form Example Using AppleScript</b><br>
+                    (by JMichelTX)
+                </caption>
+                <tr>
+                    <th><label for="name">Name:</label></th>
+                    <td><input type="text" name="name" autofocus required></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <th><label for="pwd">Password</label></th>
+                    <td><input type="password" name="pws"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Approval Required: </b><br>
+                        <small>Click on the button or text to check/uncheck</small>
+                    </td>
+                    <td><input type="checkbox" name="approval" >Do you approve?</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Pick Your Faviorite: </b><br>
+                        <small>Click on the button or text to check/uncheck</small>
+                    </td>
+                    <td>
+                        <input type="radio" name="fav">Choice A <br>
+                        <input type="radio" name="fav">Choice B <br>
+                        <input type="radio" name="fav">Choice C 
+                    </td>
+                </tr>
+                <tr>
+                    <th>Popup Menu:</th>
+                    <td>
+                        <select name="country">
+                            <option value="TX">Texas -- TX</option>
+                            <option value="ADI">Ahmedabad -- ADI</option>
+                            <option value="DLI">Delhi -- DLI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <b>List</b><br> 
+                        <small>
+                            Setup Options:
+                            <ul>
+                                <li>Number od rows to display</li>
+                                <li>Allow Multi-select</li>
+                            </ul>
+                        </small>
+                    </td>
+                    <td>
+                        <select name="list" size="5" multiple>
+                            <option value="CA">Califonia -- CA</option>
+                            <option value="CO">Colorado -- CO</option>
+                            <option value="CN">Connecticut -- CN</option>
+                            <option value="DA">Dalifornia -- DA</option>
+                            <option value="DO">Dolorado -- DO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Field Ignored by KM</th>
+                    <td><input type="text" value="10,384"></td>
+                </tr>
+                <tr>
+                    <th>Text Area</th>
+                    <td>
+                        <textarea name="test"  cols="30" rows="4">Now is the time for all good men to come to the aid of their country</textarea>
+                    </td>
+                </tr>
+            </table><br>
+            <input class="submit" type="submit" name="submit" value="Save">
+            <input class="cancel" type="reset" name="reset" value="Cancel">
+            <input class="resize" type="button" name="resize" value="Resize">
+        </form>
+    </center>
+</body>
+</html>
