@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Table 5. Time Table</title>
+        <style>
+            td{
+                border: 1px solid black;
+                padding: 7px;
+            }
+            th{
+                border: 1px solid black;
+                padding: 3px;
+            }
+            table{
+                margin-top: 20px;
+                width: 40%;
+                border-collapse: collapse;
+                font-size: 20px;
+                /* border: 1px solid black; */
+            }
+            caption{
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .footer{
+                text-align: center;
+            }
+            .grade{
+                text-align: center;
+            }
+        </style>
+    </head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <td colspan="2">Subject</td>
+                <td>John Doe</td>
+                <td>Miriam Luther</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Biology</th>
+                <th>Practical</th>
+                <td class="grade">A</td>
+                <td class="grade">A</td>
+            </tr>
+            <tr>
+                <th>Theory</th>
+                <td class="grade">A+</td>
+                <td class="grade">A</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Chemistry</th>
+                <th>Practical</th>
+                <td class="grade">B</td>
+                <td class="grade">C+</td>
+            </tr>
+            <tr>
+                <th>Theory</th>
+                <td class="grade">A</td>
+                <td class="grade">C</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Physics</th>
+                <th>Practical</th>
+                <td class="grade">A</td>
+                <td class="grade">A</td>
+            </tr>
+            <tr>
+                <th>Theory</th>
+                <td class="grade">A-</td>
+                <td class="grade">A-</td>
+            </tr>
+            <tr class="footer">
+                <td colspan="6"> <small>Created By </small> <b>Bhavesh Parmar</b> </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
