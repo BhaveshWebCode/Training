@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        fieldset{
+            width: 30%;
+            font-size: 20px;
+        }
+        .label{
+            text-align: right;
+        }
+        td{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td class="label"><label for="gender">Sex:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="m">Male
+                        <input type="radio" name="gender" value="f">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="bod">Birthday:</label></td>
+                    <td><input type="date" name="bod"></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="state">State:</label></td>
+                    <td>
+                        <select name="state" id="state">
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="mp">MP</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="country">Country</label></td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="Ind">India</option>
+                            <option value="can">Canada</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Site Registration</legend>
+            <table>
+                <tr>
+                    <td class="label"><label for="uname">Username: </label></td>
+                    <td><input type="text" name="uname" required></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="pwd">Password:</label></td>
+                    <td><input type="text" name="pwd" required></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="rpwd">Retype password: </label></td>
+                    <td><input type="text" name="rpwd" id="rpwd" required></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="email">Email address:</label></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="reemail">Retype Email address:</label></td>
+                    <td><input type="email" name="reemail" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        &nbsp;<input type="submit" name="submit" value="submit">
+    </form>
+</body>
+</html>
